@@ -1,0 +1,177 @@
+/* メニュー選択 */
+.typeSelect {
+	overflow: hidden;
+	width: 35%;
+	margin: 2em;
+	text-align: left;
+}
+.typeSelect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.typeSelect select::-ms-expand {
+    display: none;
+}
+.typeSelect.cp_sl03 {
+	position: relative;
+	border-radius: 2px;
+	border: 2px solid #da3c41;
+	background: #ffffff;
+}
+.typeSelect.cp_sl03::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #da3c41;
+	pointer-events: none;
+}
+.typeSelect.cp_sl03 select {
+	padding: 8px 38px 8px 8px;
+	color: #da3c41;
+}
+
+/* メニュー一覧 */
+ul.list_menu {
+    list-style-type: none!important;
+}
+
+ul.list_menu:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+li.bread {
+    display: block;
+    float: left;
+    height: 200px;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.bread_button {
+  padding: 0px;
+}
+
+.bread_button:hover {
+  cursor: pointer;
+}
+
+.popup {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.92;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .popup_content {
+    background: #fff;
+    padding: 30px;
+    width: 50%;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  .popup_content img {
+    width: 360px;
+  }
+
+  .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button.close {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5em 1em 0.3em;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: #ff0000;
+    border: none;
+    cursor: pointer;
+  }
+
+  .bread_menu {
+    height: 200px;
+    width: 200px;
+  }
+
+  .bread_detail {
+    height: 400px;
+    width: 400px;
+  }
+
+/* スマホ向け */
+@media screen and (max-width: 480px){
+  .list_menu {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  li.bread {
+    display: block;
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+    float: left;
+  }
+
+  .bread_menu {
+    width: 100px;
+    height: 100px;
+  }
+
+  .popup {
+    display: none;
+    height: 600px;
+    max-width: 100%;
+    background: black;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup_content {
+    background: #fff;
+    padding: 30px;
+    width: 75%;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  .bread_detail {
+    max-width: 75%;
+    max-height:200px;
+  }
+
+}
