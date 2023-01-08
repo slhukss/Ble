@@ -1,0 +1,70 @@
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+/*ポップアップ用*/
+$(".bread_button").on("click", function() {
+    var id = $(this).attr('id');
+    var html = './menu_page/' + id + '.html';
+    console.log(id);
+    var displayId = '#' + id + '_popup';
+    $(displayId)
+        .load(html)
+        .addClass("show")
+        .fadeIn();
+        // return false;
+});
+</script>
+<ul class="list_menu">
+    <li class="bread">
+        <button class="bread_button" id="tableroll"><img src="image/tableroll2.jpg" alt="テーブルロール" class="bread_menu"></button>
+        <div class="popup" id="tableroll_popup"></div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="uzumaki_cocoa"><img src="image/uzumaki_cocoa.jpg" alt="うずまきココア" class="bread_menu"></button>
+        <div class="popup" id="uzumaki_cocoa_popup"></div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="double_chocolate"><img src="image/double_chocolate.jpg" alt="ダブルチョコレート" class="bread_menu"></button>
+        <div class="popup" id="double_chocolate_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="cinnamon_roll"><img src="image/cinnamon_roll.jpg" alt="シナモンロール" class="bread_menu"></button>
+        <div class="popup" id="cinnamon_roll_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="parmigiano-reggiano"><img src="image/parmigiano-reggiano.jpg" alt="パルメザンチーズ" class="bread_menu"></button>
+        <div class="popup" id="parmigiano-reggiano_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="butterroll"><img src="image/butterroll.jpg" alt="バターロール" class="bread_menu"></button>
+        <div class="popup" id="butterroll_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="hammayo"><img src="image/Hammayo.jpg" alt="ハムマヨ" class="bread_menu"></button>
+        <div class="popup" id="hammayo_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="vinnese_roll"><img src="image/vinnese_roll.jpg" alt="ウインナーロール" class="bread_menu"></button>
+        <div class="popup" id="vinnese_roll_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="graham_bread"><img src="image/graham_bread.jpg" alt="グラハムブレッド" class="bread_menu"></button>
+        <div class="popup" id="graham_bread_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="tuna_and_cone"><img src="image/tuna_and_cone.jpg" alt="ツナ＆コーン" class="bread_menu"></button>
+        <div class="popup" id="tuna_and_cone_popup">
+        </div>
+    </li>
+    <li class="bread">
+        <button class="bread_button" id="pizza_bread"><img src="image/pizza_bread.jpg" alt="ピザパン" class="bread_menu"></button>
+        <div class="popup" id="pizza_bread_popup">
+        </div>
+    </li>
+</ul>

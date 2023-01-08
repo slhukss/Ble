@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+// メニュー選択
+$('#types').change(function() {
+    const menuViewArea = $(".menu_view");
+    const menu = $(".list_menu");
+    const selectedMenu = $('#types option:selected').val();
+    menu.remove();
+    menuViewArea.load(selectedMenu + ".html");
+});
+
+$(".menu_view").load("all_menu.html");
+
+</script>
+<h1>Menu</h1>
+<div class="typeSelect cp_sl03">
+    <select id="types">
+        <option value="all_menu">すべて</option>
+        <option value="menu_savoury">お惣菜</option>
+        <option value="menu_sweet">スイーツパン</option>
+    </select>
+</div>
+<div class="menu_view">
+</div>
