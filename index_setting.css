@@ -1,0 +1,458 @@
+
+/* トップページ */
+
+/* スマホ・PC共通 */
+
+.mybox{
+  background: none;
+  border: 1px solid #ff4e63;	/* 線の太さ・種類・色 */
+  margin: 30px 10px; /* 外側の余白 上下・左右 */
+  padding: 20px; /* 内側の余白 */
+  position: relative;
+}
+.mybox:before{
+  background-color: #fff;
+  content: 'NEWS';
+  padding: 2px 10px; /* タイトルの余白 上下・左右 */
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+.mybox:after{
+  background: none;
+  border: 1px solid #e97f8b;	/* 線の太さ・種類・色 */
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+ul.cp_list {
+  padding: 0.5em;
+  list-style-type: none;
+}
+ul.cp_list li {
+  position: relative;
+  padding: 0.5em 1em 0.5em 2.3em;
+  margin-bottom:5px;
+  border-bottom: 1px solid rgb(231, 15, 0);
+  cursor : pointer;
+}
+ul.cp_list li:after,
+ul.cp_list li:before{
+  content:'';
+  position: absolute;
+  border-radius: 50%;
+}
+ul.cp_list li:before {
+  top: 50%;
+  left: 0.2em;
+  width: 17px;
+  height: 17px;
+  background: rgb(210, 25, 25);
+  transform: translateY(-50%);
+}
+ul.cp_list li:after {
+  top: 1.1em;
+  left: 0.7em;
+  width: 14px;
+  height: 14px;
+  background: rgba(210, 25, 25, 0.5);
+}
+
+    /* Instagramアイコン */
+    .insta_btn {
+      display: inline-block;
+      text-align: center;/*中央揃え*/
+      color: #2e6ca5;/*文字色*/
+      font-size: 20px;/*文字サイズ*/
+      text-decoration: none;/*下線消す*/
+    }
+  
+    .insta_btn:hover {/*ホバー時*/
+      color:#668ad8;/*文字色*/
+      transition: .5s;/*ゆっくり変化*/
+    }
+  
+    .insta_btn .insta{/*アイコンの背景*/
+      position: relative;/*相対配置*/
+      display: inline-block;
+      width: 50px;/*幅*/
+      height: 50px;/*高さ*/
+      background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+      background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+      overflow: hidden;/*はみ出た部分を隠す*/
+      border-radius: 13px;/*角丸に*/
+    }
+  
+    .insta_btn .insta:before{/*グラデーションを重ねるため*/
+      content: '';
+      position: absolute;/*絶対配置*/
+      top: 23px;/*ずらす*/
+      left: -18px;/*ずらす*/
+      width: 60px;/*グラデーションカバーの幅*/
+      height: 60px;/*グラデーションカバーの高さ*/
+      background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+      background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+    }
+  
+    .insta_btn .fa-instagram {/*アイコン*/
+      color: #FFF;/*白に*/
+      position: relative;/*z-indexを使うため*/
+      z-index: 2;/*グラデーションより前に*/
+      font-size: 35px;/*アイコンサイズ*/
+      line-height: 50px;/*高さと合わせる*/
+    }
+
+/* PC・タブレット版設定 */
+@media screen and (min-width: 481px){
+  /* 画像 */
+  .top {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #top1 {
+    display: none;
+  }
+
+  .top ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top li {
+    display: inline-block;
+    width: calc(100vw / 2);
+    max-width: 400px;
+    min-width: 200px;
+    margin: 0 20px 0 0;
+    list-style: none;
+    text-align: center;
+  }
+
+
+  .top li img {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+
+  .top ul:first-child {
+    -webkit-animation: loop 50s -25s linear infinite;
+    animation: loop 50s -25s linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+
+  .top ul + ul {
+    -webkit-animation: loop2 50s  linear infinite;
+    animation: loop2 50s linear infinite;
+  }
+
+  @-webkit-keyframes loop {
+    0% {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes loop {
+    0% {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes loop2 {
+    0% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes loop2 {
+    0% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+
+  #booking_button_sp {
+    display: none;
+  }
+
+  .googleCalendar {
+    display: none;
+  }
+    /* 教室情報 */
+    div.information {
+      min-width: 35%;
+      max-width: 50%;
+      height: 320px;
+      margin: 30px;
+      padding: 20px;
+      float: left;
+      color: #565656;
+      background: #ffeaea;
+      box-shadow: 0px 0px 0px 10px #ffeaea;
+      border: dashed 2px #ffc3c3;
+      border-radius: 8px;
+      font-family: 'Yusei Magic', sans-serif;
+    }
+
+    ul.list_information {
+      list-style-type: none!important;
+      padding-left: 0;
+      display: table;
+    }
+  
+    /* 予約ボタン */
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+  
+    html {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  
+    .btn,
+    a.btn,
+    button.btn {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.5;
+      position: relative;
+      display: inline-block;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      color: #212529;
+      border-radius: 0.5rem;
+    }
+  
+    a.btn--circle {
+      width: 100px;
+      height: 100px;
+      padding: 10px 0 0;
+      border-radius: 50%;
+      color: #fff;
+      background: #eb6877;
+      -webkit-box-shadow: 0 7px 0 #e53b4e;
+      box-shadow: 0 3px 0 #e53b4e;
+    }
+  
+    a.btn--circle i {
+      font-size: 150%;
+    }
+  
+    .fa-position-bottom {
+      position: absolute;
+      bottom: 1rem;
+      left: calc(50% - 0.5rem);
+    }
+  
+    a.btn--circle:hover {
+      -webkit-transform: translate(0, 4px);
+      transform: translate(0, 4px);
+      color: #fff;
+      -webkit-box-shadow: 0 3px 0 #e53b4e;
+      box-shadow: 0 3px 0 #e53b4e;
+    }
+  
+    /* お知らせページ */
+    div.newsList {
+      min-width: 480px;
+      max-width: 600px;
+      max-height: 480px;
+      float: left;
+      font-family: 'Yusei Magic', sans-serif;
+      color: #800000;
+    }
+  
+    .newsList a:hover {
+      background-color: rgb(153, 160, 160);
+      transition: background-color 800ms;
+    }
+}
+
+
+
+/* スマホ向け */
+@media screen and (max-width: 480px){
+  /* 画像 */
+  .top {
+    width: 100% ;
+    text-align: center;
+  }
+
+  .top ul {
+    display: none;
+  }
+
+  #top1 {
+    width: 300px;
+    height: 200px;
+    border-radius: 130px; /* 大きく角丸 */
+    margin: auto;
+  }
+
+  /* 教室紹介 */
+  .information {
+    width: 90%;
+    height: 220px;
+    margin: 20px;
+    padding: 5px;
+    float: left;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    font-size: small;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+    /* 予約ボタン */
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+  
+    html {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  
+    .btn,
+    a.btn,
+    button.btn {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.5;
+      position: absolute;
+      display: inline-block;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      color: #212529;
+      border-radius: 0.5rem;
+    }
+  
+    a.btn--circle {
+      width: 65px;
+      height: 65px;
+      padding: 3px 0 0;
+      margin-left: 10px;
+      border-radius: 50%;
+      color: #fff;
+      background: #eb6877;
+      -webkit-box-shadow: 0 7px 0 #e53b4e;
+      box-shadow: 0 3px 0 #e53b4e;
+    }
+  
+    a.btn--circle i {
+      font-size: 150%;
+    }
+  
+    .fa-position-bottom {
+      position: absolute;
+      bottom: 1rem;
+      left: calc(50% - 0.5rem);
+    }
+  
+    a.btn--circle:hover {
+      -webkit-transform: translate(0, 4px);
+      transform: translate(0, 4px);
+      color: #fff;
+      -webkit-box-shadow: 0 3px 0 #e53b4e;
+      box-shadow: 0 3px 0 #e53b4e;
+    }
+
+    /* お知らせページ */
+    .newsList {
+      max-width: 90%;
+      min-width: 70%;
+      height: 300px;
+      float: left;
+      font-family: 'Yusei Magic', sans-serif;
+      color: #800000;
+      font-size: small;
+      margin: 10px;
+    }
+
+    .newsList a {
+      color:rgba(210, 25, 25, 0.5);
+      text-decoration: none;
+    }
+    
+    #booking_button_pc {
+      display: none;
+    }
+
+ }
+
