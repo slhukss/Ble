@@ -137,6 +137,7 @@ li.bread {
     list-style-type: none;
     text-align: center;
     margin: 5px;
+    padding: 5px;
     float: left;
   }
 
