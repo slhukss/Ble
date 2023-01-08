@@ -7,6 +7,7 @@
   }
 
   div.booking_form {
+    width: 40vw;
     text-align: left;
     float: right;
   }
