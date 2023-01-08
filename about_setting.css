@@ -1,0 +1,53 @@
+  /*プロフィール*/
+  div.profile_title {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #f00;
+    text-align: center;
+    float: left;
+    width:480px;
+    height: 300px;
+  }
+  img.profile_pic {
+    border-radius: 50%;
+  }
+
+  div.information {
+    width: 600px;
+    height: 320px;
+    margin: 30px;
+    padding: 20px;
+    float: left;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+/* スマホ向け */
+@media screen and (max-width: 480px){
+  div.profile_title {
+    font-family: 'Yusei Magic', sans-serif;
+    color: #f00;
+    text-align: center;
+    float: left;
+    width: 85%;
+    height: 250px;
+  }
+
+  div.information {
+    width: 85%;
+    height: 300px;
+    margin: 15px;
+    padding: 5px;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    font-size: smaller;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+}
