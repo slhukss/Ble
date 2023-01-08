@@ -1,9 +1,9 @@
 /* お問い合わせページ */
 /* information */
 .information_2 {
-    width: 600px;
+    width: 60vw;
     height:480px;
-    margin: 30px;
+    margin: 10px;
     padding: 20px;
     float: left;
     color: #5e1d1d;
@@ -22,10 +22,10 @@
 
 /* Google フォーム */
 .GoogleForms {
-  float: left;
-  margin: 30px;
+  float: right;
+  margin: 10px;
   padding: 5px;
-  width: 480px;
+  width: 30vw;
   height: 500px;
 }
 
