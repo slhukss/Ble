@@ -33,6 +33,7 @@
     text-align: center;
     float: right;
     margin:5px;
+    max-width: 45vw;
 }
 
 .news_image img {
