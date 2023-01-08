@@ -1,3 +1,8 @@
+/* 内容 */
+div.details {
+  display: flex;
+}
+
 /*プロフィール*/
   div.profile_title {
     font-family: 'Hachi Maru Pop', cursive;
