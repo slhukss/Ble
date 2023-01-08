@@ -1,0 +1,64 @@
+/* お問い合わせページ */
+/* information */
+.information_2 {
+    width: 600px;
+    height:480px;
+    margin: 30px;
+    padding: 20px;
+    float: left;
+    color: #5e1d1d;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* Google Maps */
+#GoogleMaps {
+  margin: 15px;
+  padding: 5px;
+}
+
+/* Google フォーム */
+.GoogleForms {
+  float: left;
+  margin: 30px;
+  padding: 5px;
+  width: 480px;
+  height: 500px;
+}
+
+/* スマホ向け */
+@media screen and (max-width: 480px){
+  div.information_2 {
+    width: 95%;
+    height: 550px;
+    margin: 5px;
+    padding: 5px;
+    font-size: small;
+    color: #571313;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 5px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 5px;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  /* Google Maps */
+  #GoogleMaps {
+    margin: 15px;
+    padding: 5px;
+    float: right;
+  }
+
+  /* Google フォーム */
+  .GoogleForms {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 500px;
+  }
+
+}
