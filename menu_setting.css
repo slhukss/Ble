@@ -134,14 +134,15 @@ li.bread {
     display: block;
     list-style-type: none;
     text-align: center;
-    margin: 5px;
-    padding: 5px;
+    /* margin: 5px; */
+    /*padding: 5px; */
     float: left;
   }
 
   .bread_menu {
-    width: 100%;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
   }
 
   .popup {
