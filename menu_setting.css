@@ -133,12 +133,12 @@ li.bread {
   li.bread {
     display: block;
     height: 200px;
-    width: 200px;
+    width: 100%;
     list-style-type: none;
     text-align: center;
     margin: 5px;
     padding: 5px;
-    float: left;
+    float: ;
   }
 
   .bread_menu {
