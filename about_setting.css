@@ -1,4 +1,8 @@
-  /*プロフィール*/
+div.content {
+  display: flex;
+}
+
+/*プロフィール*/
   div.profile_title {
     font-family: 'Hachi Maru Pop', cursive;
     font-family: 'Yusei Magic', sans-serif;
