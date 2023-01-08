@@ -1,0 +1,241 @@
+
+@media screen and (min-width: 481px){
+    /* 共通 */
+
+    /* パン教室Bleトップ */
+    div.header {
+        width: 480px;
+        text-align: left;
+        font-family: 'Hachi Maru Pop', cursive;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .btn-circle-stitch {
+        display: inline-block;
+        text-decoration: none;
+        background: #f00;
+        color: #FFF;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 0px 5px #ff162a;
+        border: dashed 1px #FFF;
+        transition: .4s;
+        float: left;
+    }
+
+    .btn-circle-stitch:hover {
+        background: #b61c1c;
+        box-shadow: 0px 0px 0px 5px #b61c1c;
+    }
+    p.top_text {
+        margin-left: 20px;
+        margin-top: 75px;
+    }
+
+    /* メニューの設定 */
+    div.menu{
+        float: right;
+        margin-right: 20px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+
+    /*チェックボックス非表示*/
+    .menu_test {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー非表示 */
+    .btn-burger {
+        display: none;  /*768px以上では使用しない */
+    }
+
+    li.top_menu {
+        display: inline;
+    }
+    li:hover.top_menu {
+        background-color: rgb(153, 160, 160);
+        transition: background-color 800ms;
+    }
+
+    /* トップに戻るメニュー非表示 */
+    #back2top {
+        display: none;
+    }
+
+    /* スマホ用予約ページメニュー非表示 */
+    #booking_sp {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color:#800000;
+    }
+
+    /* コンテンツエリア */
+    div.content {
+        clear: both;
+    }
+
+    /* 見出し */
+    h1 {
+        padding: 1rem 2rem;
+        border-left: 6px double #000;
+        margin-bottom: 5px;
+        color:#b61c1c;
+    }
+}
+
+/* スマホ向け */
+@media screen and (max-width: 480px){
+    /* ヘッダー */
+    div.header {
+        width: 85%;
+        text-align: left;
+        font-family: 'Hachi Maru Pop', cursive;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    /* ロゴ */
+    .btn-circle-stitch {
+        display: inline-block;
+        text-decoration: none;
+        background: #f00;
+        color: #FFF;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 0px 5px #ff162a;
+        border: dashed 1px #FFF;
+        transition: .4s;
+    }
+
+    .btn-circle-stitch:hover {
+        background: #b61c1c;
+        box-shadow: 0px 0px 0px 5px #b61c1c;
+    }
+
+    p.top_text {
+        display: none;
+    }
+
+    /* aタグリンク */
+    .top_menu a {
+        text-decoration: none;
+        color:#fafafa;
+    }
+
+    /* ハンバーガーメニュー */
+    /* メニューの設定 */
+    div.menu{
+        float: right;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+
+    /* PC版予約メニュー非表示 */
+    #booking_pc {
+        display: none;
+    }
+    /*ハンバーガーアイコン*/
+    /*ハンバーガーアイコン*/
+    .btn-burger {
+        cursor: pointer;
+        display: block;
+        width: 56px;
+        height: 60px;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+    }
+    /*ハンバーガーアイコンを作る三本線*/
+    .icon, .icon:before, .icon:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 2px; /*線の太さ*/
+        width: 35px; /*線の長さ*/
+        background-color: #444;
+        border-radius: 2px;
+        display: block;
+        content: '';
+        cursor: pointer;
+        margin: auto;
+    }
+    /*三本線の間隔*/
+    .icon:before {
+        top: 20px;
+    }
+    .icon:after {
+        top: -20px;
+    }
+
+    /*チェックボックス非表示*/
+    .menu_test {
+        display: none;
+    }
+
+    /*アイコンをクリックしたら*/
+    .menu_test:checked ~ .btn-burger .icon {
+        background: transparent;
+    }
+
+    .menu_test:checked ~ .btn-burger .icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .menu_test:checked ~ .btn-burger .icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .icon,
+    .icon:before,
+    .icon:after {
+        transition: all .8s;
+    }
+
+    /*表示されるメニューの中身*/
+    .nav {
+        width: 65%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/* メニューを画面の外に飛ばす */
+        z-index: 99;
+        background: rgb(255, 0, 0);
+        transition: .5s;
+    }
+
+    .nav_list{
+        list-style-type: none!important;
+    }
+
+    .menu_test:checked ~ .nav {
+        left: 0;
+    }
+
+    /* コンテンツエリア */
+    div.content {
+        clear: both;
+        left: 50%;
+        top: 50%;
+    }
+    
+    /* 見出し */
+    h1 {
+        padding: 1rem 2rem;
+        border-left: 6px double #000;
+        margin-bottom: 5px;
+        color:#b61c1c;
+    }
+
+}

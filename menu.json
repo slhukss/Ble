@@ -1,0 +1,116 @@
+[
+    {
+        "menu_id": "tableroll",
+        "menu_name": "テーブルロール",
+        "flavour": "savoury",
+        "description": "初回で作る基本となるパンです。初回はまずこちらのパンを作ります。"
+    },
+    {
+        "menu_id": "parmigiano-reggiano",
+        "menu_name": "パルメザンチーズ",
+        "flavour" : "savoury",
+        "description": "ふわふわな生地と粉チーズのハーモニーが最高のパンです。"
+    },
+    {
+        "menu_id": "butterroll",
+        "menu_name": "バターロール",
+        "flavour" : "savoury",
+        "description": "バターの味がしっかり味わえるふわふわの生地がたまらないパンです。"
+    },
+    {
+        "menu_id": "hammayo",
+        "menu_name": "ハムマヨ",
+        "flavour" : "savoury",
+        "description": "ふわふわパンにあらびきマスタード、ロースハムにマヨネーズ！成形も楽しいお惣菜パンです。"
+    },
+    {
+        "menu_id": "vinnese_roll",
+        "menu_name": "ウインナーロール",
+        "flavour" : "savoury",
+        "description": "簡単そうだけど、実はいろいろお勉強ポイントありの成形です。もこもこかわいく作りましょう。"
+    },
+    {
+        "menu_id": "graham_bread",
+        "menu_name": "グラハムブレッド",
+        "flavour" : "savoury",
+        "description": "グラハム＝全粒粉　健康に気遣う方にぴったりのパンです。糖質抑えめ。どどーんと立派な大型パンですがとても簡単にできちゃいます。"
+    },
+    {
+        "menu_id": "tuna_and_cone",
+        "menu_name": "ツナ＆コーン",
+        "flavour" : "savoury",
+        "description": "ツナとコーンのマヨネーズ和えをパン生地にのせて焼きます。生地をきれいに楕円形に伸ばす練習です。"
+    },
+    {
+        "menu_id": "pizza_bread",
+        "menu_name": "ピザパン",
+        "flavour" : "savoury",
+        "description": "ピザとパンの良いとこ取り！ふわふわパンにピザソースととろけるチーズをトッピング。生地をナンのような形に成形します。"
+    },
+    {
+        "menu_id": "uzumaki_cocoa",
+        "menu_name": "うずまきココア",
+        "flavour" : "sweet",
+        "description": "ココア生地にチョコナッツクリーム(ヌテラ)を塗りうずまき状に巻いて焼きます。ココアのほろ苦さとチョコナッツクリームの甘さがよく合います。"
+    },
+    {
+        "menu_id": "double_chocolate",
+        "menu_name": "ダブルチョコレート",
+        "flavour" : "sweet",
+        "description": "チョコレートを織り込んだ生地にたっぷりチョコレートを入れたパン。"
+    },
+    {
+        "menu_id": "cinnamon_roll",
+        "menu_name": "シナモンロール",
+        "flavour" : "sweet",
+        "description": "あまくてほろ苦い味なので、コーヒーにもよく合います。"
+    },
+    {
+        "menu_id" : "choco_custard",
+        "menu_name" : "チョコカスタード",
+        "flavour" : "sweet",
+        "description": "とってもリッチな菓子パンをパウンド型に入れて焼きます。カスタードクリームも作りますよ。"
+    },
+    {
+        "menu_id" : "noix_raisin",
+        "menu_name" : "ノアレザン",
+        "flavour" : "sweet",
+        "description": "ノア＝くるみ　レザン＝レーズン　くるみとレーズンをライ麦入りの生地に混ぜ込んでスティック状に成形しています。レーズン以外にも少しフルーツを一緒に混ぜ込んでみました。見た目以上に味わい深いパンです。"
+    },
+    {
+        "menu_id" : "parmigiano_soft",
+        "menu_name" : "パルメザンソフト",
+        "flavour" : "savoury",
+        "description": "ふんわり生地にパルメザンチーズたっぷり。パルメザンチーズを生地で巻き込むのって想像以上に難しいのです。"
+    },
+    {
+        "menu_id" : "Cafe_au_lait",
+        "menu_name" : "カフェオレパン",
+        "flavour" : "sweet",
+        "description": "仕込み水に濃厚なカフェオレを使い、成形ではチョコチップをたっぷり巻き込みます。人気のスイーツパンです。"
+    },
+    {
+        "menu_id" : "melon_bread",
+        "menu_name" : "メロンパン",
+        "flavour" : "sweet",
+        "description": "みんな大好き！定番の菓子パン、メロンパン。とても身近な昔ながらのパンですが、焼き上がりまで工程がたくさん。丁寧に作ります。"
+    },
+    {
+        "menu_id" : "carrot_role",
+        "menu_name" : "にんじんロール",
+        "flavour" : "savoury",
+        "description": "すりおろしたにんじんを生地に加えてこねます。鮮やかオレンジ色に仕上がりますが、にんじんの味はほとんどしませんので、にんじん嫌いのお子さんにこっそりどうぞ"
+    },
+    {
+        "menu_id" : "spicy_twist",
+        "menu_name" : "スパイシーツイスト",
+        "flavour" : "savoury",
+        "description": "ブランパン専用粉にブラックペッパーとドライバジルを加えた生地を編んでいきます。1本の生地で三編み状に仕上げる成形の勉強です。"
+    },
+    {
+        "menu_id" : "france_mini_toast",
+        "menu_name" : "フランスミニ食パン",
+        "flavour" : "savoury",
+        "description": "ブランパン専用粉で作る、外はさっくり中は軽～い食パンです。全然こねないで作ります。なのにとってもおいしいのです。"
+    }
+]
