@@ -32,10 +32,10 @@
 .news_image {
     text-align: center;
     float: right;
+    margin:5px;
 }
 
 .news_image img {
-    margin: 10px;
     max-width: 30vw;
     max-height: 480px;
 }
