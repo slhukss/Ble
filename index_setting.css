@@ -6,6 +6,7 @@
 .mybox{
   background: none;
   border: 1px solid #ff4e63;	/* 線の太さ・種類・色 */
+  border-radius: 10px;
   margin: 30px 10px; /* 外側の余白 上下・左右 */
   padding: 20px; /* 内側の余白 */
   position: relative;
@@ -23,6 +24,7 @@
 .mybox:after{
   background: none;
   border: 1px solid #e97f8b;	/* 線の太さ・種類・色 */
+  border-radius: 10px;
   content: '';
   position: absolute;
   top: 3px;
