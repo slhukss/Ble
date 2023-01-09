@@ -55,7 +55,16 @@
 
     li.top_menu {
         display: inline;
+        background: darkred;
+        border-radius: 6px;
+        padding: 10px 20px;
+        
     }
+    
+    li.top_menu > a {
+        color: white;
+    }
+    
     li:hover.top_menu {
         background-color: rgb(153, 160, 160);
         transition: background-color 800ms;
