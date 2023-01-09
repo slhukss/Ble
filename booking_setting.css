@@ -7,6 +7,8 @@
   }
 
   div.booking_form {
+    width: 50%;
+    height: 500px;
     text-align: left;
     float: right;
   }
