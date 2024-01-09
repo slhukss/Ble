@@ -67,6 +67,7 @@ li.bread {
 }
 
 .bread_button {
+border: none;
   padding: 0px;
 }
 
