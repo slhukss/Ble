@@ -411,12 +411,16 @@ ul.cp_list li:after {
     color: #800000;
   }
 
+  button.fc-today-button.fc-button.fc-button-primary {
+    margin-left: 120px;
+  }
+
   button.fc-dayGridMonth-button.fc-button.fc-button-primary {
     display: none;
   }
 
   button.fc-listYear-button.fc-button.fc-button-primary {
-    border-radius: 0.3em!important;
+    display: none;
   }
 
   .fc-list.fc-list-sticky.fc-listMonth-view.fc-view {
