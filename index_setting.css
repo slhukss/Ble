@@ -224,7 +224,11 @@ ul.cp_list li:after {
     display: none;
   }
 
-  .googleCalendar {
+  .calendar_title {
+    display: none;
+  }
+
+  #calendar {
     display: none;
   }
     /* 教室情報 */
@@ -354,7 +358,7 @@ ul.cp_list li:after {
 
   /* 教室紹介 */
   .information {
-    width: 90%;
+    width: 85%;
     height: 220px;
     margin: 20px;
     padding: 5px;
@@ -366,6 +370,57 @@ ul.cp_list li:after {
     border-radius: 8px;
     font-size: small;
     font-family: 'Yusei Magic', sans-serif;
+  }
+
+  /*カレンダー*/
+  .calendar_title {
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Yusei magic', sans-serif;
+    color: #800000;
+  }
+
+  div#calendar {
+    width:80%;
+    margin: 30px;
+    padding: 5px;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+
+  .fc .fc-button-primary {
+    background-color: #ffc3c3!important;
+    border: none!important;
+  }
+
+  .fc .fc-toolbar-title {
+    display: none;
+  }
+
+  .fc-toolbar-chunk {
+    margin: 2px!
+  }
+
+  .fc-theme-standard .fc-list-day-cushion {
+    font-family: 'Hachi Maru Pop';
+    background-color: #fee9e9!important;
+    color: #800000;
+  }
+
+  .fc .fc-list-event.fc-event-forced-url {
+    font-family: 'Yusei magic', sans-serif;
+    color: #800000;
+  }
+
+  button.fc-dayGridMonth-button.fc-button.fc-button-primary {
+    display: none;
+  }
+
+  button.fc-listYear-button.fc-button.fc-button-primary {
+    border-radius: 0.3em!important;
+  }
+
+  .fc-list.fc-list-sticky.fc-listMonth-view.fc-view {
+    border-radius: 0.3em!important;
   }
 
     /* 予約ボタン */

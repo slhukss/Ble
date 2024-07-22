@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="index_setting.css">
+    <link href='fullCalendar/lib/main.css' rel='stylesheet' />
+    <script src='fullCalendar/lib/main.js'></script>
+    <script src="calendar.js"></script>
 </head>
 <body>
     <header>
@@ -71,8 +74,8 @@
             <a href="booking.html" id="booking_button_pc" class="btn btn--circle"><br>ご予約<br>はコチラ</a>
             <a href="https://forms.gle/JGEyGPbVR5UB1ZAY6" id="booking_button_sp" class="btn btn--circle" target="_blank"><br>ご予約<br>はコチラ</a>
         </div>
-        <div class="googleCalendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=MXQ5NDBrY25oY3FndXM5YmRjOWdmNGl0MmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23AD1457&amp;color=%230B8043&amp;showPrint=0" style="border-width:0" width="100%" height="350" frameborder="0" scrolling="no"></iframe>        </div>
+        <h2 class="calendar_title">予約状況</h2>
+        <div id='calendar'></div>
         <div class="newsList" id="newsList">
             <div class="mybox">
                 <ul class="cp_list">
