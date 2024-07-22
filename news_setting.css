@@ -3,10 +3,9 @@
     font-family: 'Hachi Maru Pop', cursive;
     font-family: 'Yusei Magic', sans-serif;
     color: #800000;
-    float: left;
-    width: 45vw;
-    max-height: 70vh;
-    margin: 10px;
+    float: inline-start;
+    width: 40%;
+    margin: 20px;
     padding: 1em;
     background-color: #ffd4cc;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
@@ -29,21 +28,24 @@
     padding: 0;
 }
 
-.news_image {
-    text-align: center;
-    float: right;
-    margin:5px;
-    max-width: 45vw;
-}
-
-.news_image img {
-    max-width: 30vw;
-    max-height: 480px;
-}
-
 .instagram {
     margin-right:150;
     float: right;
+}
+
+@media screen and (min-width: 480px) {
+    /*ニュース画像*/
+    .news_image {
+        text-align: center;
+        float: inline-start;
+        margin:5px;
+        max-width: 45%;
+    }
+    
+    .news_image img {
+        max-width: 30vw;
+        max-height: 480px;
+    }
 }
 
 /* スマホ向け */
@@ -74,10 +76,8 @@
     }
 
     .news_image {
-        display: none;
-    }
-
-    .news_image img {
-        display: none;
+        width: 95%;
+        height: 80%;
+        margin: 25px;
     }
 }
