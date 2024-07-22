@@ -83,5 +83,6 @@
 
     .news_image img {
         max-width: 300px;
+        margin:5px
     }
 }
