@@ -64,8 +64,7 @@
 }
 
 /* タブレット（縦画面）向け */
-
-@media screen and (max-width: 1100px){
+@media screen and (min-width:481px) and (max-width:1080px){
   div.information_2 {
     width: 45%;
     height: 550px;
