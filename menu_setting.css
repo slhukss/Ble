@@ -126,6 +126,10 @@ border: none;
 
 /* スマホ向け */
 @media screen and (max-width: 480px){
+  .menu_view {
+    margin: 15px;
+  }
+
   .list_menu {
     margin: 0px;
     padding: 0px;
