@@ -62,3 +62,38 @@
   }
 
 }
+
+/* タブレット（縦画面）向け */
+
+@media screen and (max-width: 1100px){
+  div.information_2 {
+    width: 45%;
+    height: 550px;
+    margin: 5px;
+    padding: 5px;
+    font-size: small;
+    color: #571313;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 5px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 5px;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+  /* Google Maps */
+  #GoogleMaps {
+    margin: 15px;
+    padding: 5px;
+    float: right;
+  }
+
+  /* Google フォーム */
+  .GoogleForms {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    height: 500px;
+  }
+
+}
