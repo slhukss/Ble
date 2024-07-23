@@ -15,7 +15,7 @@
 
   div.information {
     width: 60vw;
-    height: 320px;
+    height: 35%;
     margin: 10px;
     padding: 20px;
     float: right;
@@ -50,5 +50,26 @@
     border-radius: 8px;
     font-size: smaller;
     font-family: 'Yusei Magic', sans-serif;
+  }
+}
+
+ /*-------------------------------------------
+Tablet
+-------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:1080px){
+  div.profile_title{
+    margin-left: 30px;
+    width: 80%;
+  }
+
+  div.information {
+    width: 60vw;
+    height: 35%;
+    margin-top: 8vw;
+    margin-right: 17vw;
+  }
+
+  img.profile_pic {
+    width: 48%
   }
 }
