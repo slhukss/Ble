@@ -18,6 +18,11 @@
             </div>
         </header>
         <div class="content">
+            <script>
+                fetch("../news_header.html")
+                  .then((response) => response.text())
+                  .then((data) => document.querySelector("#header").innerHTML = data);
+              </script>
             <div class="news_discription">
                 <div class="tape"></div>
                     <p>
@@ -36,9 +41,4 @@
             </div>
         </div>
     </body>
-    <script>
-        fetch("../news_header.html")
-          .then((response) => response.text())
-          .then((data) => document.querySelector("#header").innerHTML = data);
-      </script>
 </html>
