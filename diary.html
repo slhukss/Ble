@@ -11,24 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="diary_setting.css">
-    <script type="module" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="module" src="diary.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="diary.js"></script>
 </head>
 <body>
     <header>
         <div id="header">
         </div>
     </header>
+    <script>
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => document.querySelector("#header").innerHTML = data);
+      </script>
     <div class="content">
         <h1>Diary</h1>
         <div id="container" class="wrapper">
             <main class="diary">
             </main>
     </div>
-    <script>
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => document.querySelector("#header").innerHTML = data);
-      </script>
 </body>
 </html>

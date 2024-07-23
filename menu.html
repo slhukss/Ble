@@ -19,6 +19,11 @@
         <div id="header">
         </div>
     </header>
+    <script>
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => document.querySelector("#header").innerHTML = data);
+      </script>
     <div class="content">
         <h1>Menu</h1>
         <div class="typeSelect cp_sl03">
@@ -32,10 +37,5 @@
             <ul class="list_menu"></ul>
         </div>
     </div>
-    <script>
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => document.querySelector("#header").innerHTML = data);
-      </script>
 </body>
 </html>

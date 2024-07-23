@@ -23,6 +23,11 @@
     <div id="header">
     </div>
 </header>
+<script>
+  fetch("header.html")
+    .then((response) => response.text())
+    .then((data) => document.querySelector("#header").innerHTML = data);
+</script>
     <div class="content">
       <h1>Booking</h1>
         <div class="booking_discription">
@@ -40,10 +45,5 @@
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRflFnN0ZOtWE1teiGXYMA7RHZqoFP_NJxoO9lhW2Vp3WlLw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
         </div>
     </div>
-    <script>
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((data) => document.querySelector("#header").innerHTML = data);
-    </script>
 </body>
 </html>
