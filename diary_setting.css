@@ -101,6 +101,10 @@ SP
   main article {
     margin-left: 5px;
   }
+
+  main img {
+    width: 41%
+  }
 }
 
 /*-------------------------------------------
