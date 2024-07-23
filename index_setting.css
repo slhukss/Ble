@@ -586,4 +586,9 @@ Tablet
     animation: loop2 50s linear infinite;
   }
 
+  div.newsList {
+    max-width: 300px;
+    min-width: 100px;
+  }
+
 }
