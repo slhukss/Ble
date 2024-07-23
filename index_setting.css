@@ -111,7 +111,7 @@ ul.cp_list li:after {
       line-height: 50px;/*高さと合わせる*/
     }
 
-/* PC・タブレット版設定 */
+/* PC版設定 */
 @media screen and (min-width: 481px){
   /* 画像 */
   .top {
@@ -517,3 +517,73 @@ ul.cp_list li:after {
 
  }
 
+ /*-------------------------------------------
+Tablet
+-------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:1080px){
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  .top {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .top ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top li {
+    display: inline-block;
+    width: calc(100vw / 2);
+    min-width: 100px;
+    margin: 0 50px 0 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .top li img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .top ul:first-child {
+    -webkit-animation: loop 50s -25s linear infinite;
+    animation: loop 50s -25s linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+  
+  .top ul:last-child {
+    animation: loop2 50s linear infinite;
+  }
+
+}
