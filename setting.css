@@ -3,7 +3,7 @@
     /* 共通 */
 
     /* パン教室Bleトップ */
-    div.header {
+    div.title {
         width: 480px;
         text-align: left;
         font-family: 'Hachi Maru Pop', cursive;
@@ -102,7 +102,7 @@
 /* スマホ向け */
 @media screen and (max-width: 480px){
     /* ヘッダー */
-    div.header {
+    div.title {
         width: 85%;
         text-align: left;
         font-family: 'Hachi Maru Pop', cursive;
