@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>News|パン教室Ble: 単発でもOK!東京都内駅チカ 初心者の方も安心な超少人数制</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../setting.css">
+        <link rel="stylesheet" href="../news_setting.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+            </div>
+        </header>
+        <div class="content">
+            <div class="news_discription">
+                <div class="tape"></div>
+                    <p>
+                        <h2>クロワッサン・デニッシュ開講</h2>
+                        <h3>2020/11/15</h3>
+                        大変お待たせいたしました。<br>
+                        12月・1月・2月の火～土曜日、すべて12:30から開始となります。<br>
+                        所要時間は約4時間、受講料はクロワッサン・デニッシュ各4500円です。<br>
+                        ご予約の際にクロワッサンもしくはデニッシュいずれかをご指定ください。<br>
+                        ご不明な点がございましたらお気軽にお問い合わせください。<br>
+                        何卒宜しくお願い致します。
+                    </p>
+            </div>
+            <div class="news_image">
+                <img src="../image/news/croissant.jpg" alt="クロワッサン">
+            </div>
+        </div>
+    </body>
+    <script>
+        fetch("../header.html")
+          .then((response) => response.text())
+          .then((data) => document.querySelector("#header").innerHTML = data);
+      </script>
+</html>

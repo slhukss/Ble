@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>News|パン教室Ble: 単発でもOK!東京都内駅チカ 初心者の方も安心な超少人数制</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../setting.css">
+        <link rel="stylesheet" href="../news_setting.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+            </div>
+        </header>
+        <div class="content">
+            <div class="news_discription">
+                <div class="tape"></div>
+                    <p>
+                        <h2>おうちカフェ（試食会）開催</h2>
+                        <h3>2019/06/15</h3>
+                        しばらくの間おうちカフェ（試食会）を定期的に開催します<br>
+                        第1土曜日・第3日曜日　12:45～・15:00 ～・毎週火・水・木曜日12:45～<br>
+                        各回90分・定員3名さまです。<br>
+                        お一人でのご予約も大歓迎です（ご相席で3名さままでとなります）。<br>
+                        Bleの生徒さんと生徒さんのお友達・お知り合いの方がご参加いただけます。<br>
+                        お子さまの同伴はご遠慮いただいております。<br>
+                        あしからずご了承ください。<br>
+                        メニューは当日のお楽しみですが一例として<br>
+                        お通し的にシンプルなプチパンもしくはプチガトー<br>
+                        クロックムッシュ、アレンジトースト<br>
+                        フレンチトーストもしくはスコーン<br>
+                        チーズケーキもしくはトライフルなどとお飲み物です。<br>
+                        予約制となりますのでご希望の方は前日15:00までにご連絡ください。<br>
+                        メールでも承りますが、前日の場合はお電話でお願いいたします。<br>
+                        なお、ご予約はパン教室優先となります。<br>
+                    </p>
+            </div>
+            <div class="news_image">
+                <img src="../image/news/teaFlavouredCiffon.jpg" alt="紅茶シフォンケーキ" width="300">
+                <img src="../image/news/bakedCheeseCake.jpg" alt="ベイクドチーズケーキ" width="300">
+            </div>
+        </div>
+    </body>
+    <script>
+        fetch("../header.html")
+          .then((response) => response.text())
+          .then((data) => document.querySelector("#header").innerHTML = data);
+      </script>
+</html>
