@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*
+コンテンツ幅を設定するための共通クラス
+*/
+.wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+/*
+疑似要素で下線を設定するために、「position: relative;」を設定
+*/
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+/*
+「position: absolute;」を設定し、left、bottomで下線の位置を調整
+widthとheightで線の長さと高さを設定
+疑似要素で線を表示させるためには、「content: '';」を設定すること
+「transition: all 200ms ease;」でホバー時の速度などを設定
+*/
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+/*
+ホバー時の下線の設定
+「opacity: 0;」下線を非表示
+「transform: translateY(3px);」下に3px移動
+→下に3px移動しながら下線を非表示にする
+*/
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+/*-------------------------------------------
+container
+-------------------------------------------*/
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+main {
+  width: 65%;
+  color: #800000;
+}
+main article {
+  margin-bottom: 80px;
+  margin-left: 30em;
+  width: 100%;
+}
+main .article-title {
+  font-size: 1.5rem;
+  margin: 10px 0 15px 0;
+  font-family: 'Hachi Maru Pop';
+}
+
+main article .text {
+  /* padding: 10px 40px 30px 40px; */
+  font-family: 'Yusei magic', sans-serif;
+}
+
+.img_display {
+  width: 75%;
+}
+
+main img {
+  width: 30%;
+  margin: 10px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+  /*-------------------------------------------
+  container
+  -------------------------------------------*/
+  #container {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+  }
+
+  main article {
+    margin-left: 5px;
+  }
+}
+
+/*-------------------------------------------
+Tablet
+-------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:1080px){
+  main article {
+    margin-left: 20em;
+  }
+}
