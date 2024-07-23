@@ -58,7 +58,7 @@ main {
   width: 65%;
   color: #800000;
 }
-main article {
+.entry {
   margin-bottom: 80px;
   margin-left: 10em;
   width: 100%;
@@ -68,13 +68,13 @@ main article {
   border-radius: 8px;
   padding: 10px;
 }
-main .article-title {
+.article-title {
   font-size: 1.5rem;
   margin: 10px 0 15px 0;
   font-family: 'Hachi Maru Pop';
 }
 
-main article .text {
+article .text {
   /* padding: 10px 40px 30px 40px; */
   font-family: 'Yusei magic', sans-serif;
 }
@@ -86,6 +86,36 @@ main article .text {
 main img {
   width: 30%;
   margin: 5px;
+}
+
+.entry_list li {
+  list-style:none
+}
+
+.entry_list li.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding:0;
+}
+
+.more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ffc3c3;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:#fff;
+  padding: 0;
+  line-height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  margin-left: 25em;
 }
 
 /*-------------------------------------------
@@ -110,6 +140,15 @@ SP
 
   main img {
     width: 41%
+  }
+
+  .entry {
+    margin-left: 5px;
+    width: 80%
+  }
+  
+  .more button{
+    margin-left: 5px;
   }
 }
 
